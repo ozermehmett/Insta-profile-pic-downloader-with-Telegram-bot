@@ -9,7 +9,7 @@ bot = telegram.Bot(token=TOKEN)
 L = instaloader.Instaloader()
 
 def start(update, context):   #start komutuna verilecek cevap 
-    context.bot.send_message(chat_id=update.effective_chat.id, text="Merhaba! Bu bot Instagram profil fotoğrafını göstermek için hazır.\nLütfen şu formatta yazınız: \n\n/profile username")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Hello! This bot is ready to send the profile photo of any Instagram user you want.\nPlease write in the following format:\n/profile username")
 
 def profile(update, context):   #profile komutu gelirse döndürülecek fonk.
     username = context.args[0]
